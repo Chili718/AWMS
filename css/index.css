@@ -1,0 +1,276 @@
+/**************************************************************************
+Styling for the Home Page (index.php)
+**************************************************************************/
+
+html {
+
+  
+
+}
+
+body{
+
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.navContainer{
+
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  overflow: hidden;
+  margin-top: 5px;
+
+}
+
+.logo{
+
+  min-width: 230px;
+  width: 68vw;
+  max-width: 1250px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+.navBar{
+
+  width: 100vw;
+  max-width: 1450px;
+  background: rgba(255,255,255,0);
+  padding: 5px 5px 25px 5px;
+  clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.navButtonContainer{
+
+  position: relative;
+  cursor: pointer;
+  filter: drop-shadow(20px 14px 5px rgba(0, 0, 0, 0.1));
+
+}
+
+.navButton{
+
+  padding: 6px 35px 6px 35px;
+  background-color: rgba(255, 255, 255, 0.7);
+  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+  color: #020b44;
+  font-size: 1.4em;
+  border-top: 2px #af102c solid;
+  border-bottom: 2px #af102c solid;
+  transition: 0.4s ease;
+
+}
+
+.navButtonContainer i{
+
+  position: absolute;
+  inset: 0;
+  display: block;
+
+}
+
+.navButtonContainer i::before, .navButtonContainer i::after{
+
+  transition: 0.4s ease;
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  background: #af102c;
+}
+
+.navButtonContainer i::before {
+  left: 80%;
+  top: -2px;
+}
+
+.navButtonContainer:hover i::before{
+  width: 15px;
+  left: 20%;
+  /* background: white; */
+}
+
+.navButtonContainer i::after {
+  left: 20%;
+  bottom: -2px;
+}
+
+.navButtonContainer:hover i::after {
+  width: 15px;
+  left: 80%;
+  /* background: white; */
+}
+
+.navButtonContainer:hover .navButton{
+
+  /* color: white;
+  background-color: #af102c; */
+  clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 15% 100%);
+  /* border-top: 2px white solid;
+  border-bottom: 2px white solid; */
+  /* letter-spacing: 1px;
+  padding: 8px 38px 8px 38px; */
+
+}
+
+.pageContent{
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgba(255,255,255,0.5);
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  z-index: 1;
+  padding-top: 15vh;
+
+}
+
+.background{
+  /* background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-position: right;
+  background-image: url(../images/home_background_clouds.png);
+  background-attachment: fixed;
+  margin: 0;
+  transition: transform 20s ease-in-out; */
+  height: inherit;
+  width: inherit;
+
+}
+
+@keyframes cloudLoop {
+
+  0% {
+
+    transform: translateX(-100%);
+    left: 100%;
+
+  }
+
+  100% {
+
+    transform: translateX(0);
+    left: 0;
+
+  }
+
+}
+
+.clouds{
+
+  height: inherit;
+  content: "";
+  position: fixed;
+  /* transition: transform 5s ease-in-out; */
+  left: 100%;
+  transform: translateX(-100%);
+  animation: cloudLoop  alternate 240s linear infinite;
+
+}
+
+.background::after{
+
+  background-size: cover;
+  background-repeat: no-repeat ;
+  background-position: center;
+  background-image: url(../images/home_background_towers_smaller.png);
+  background-attachment: fixed;
+  height: inherit;
+  width: inherit;
+  content: "";
+  position: fixed;
+
+}
+@media screen and (max-width: 1280px) {
+
+  .navButton{
+
+    font-size: 1.2em;
+
+  }
+
+}
+
+@media screen and (max-width: 920px) {
+
+  .navContainer {
+    margin-right: 10px;
+    padding-top: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  .navBar{
+
+    display: none;
+
+  }
+
+  .navButtonContainer{
+
+    opacity: 0;
+
+  }
+
+  .navBarOpen {
+
+    margin-top: 0px;
+    position: fixed;
+    top: 25%;
+    right: 0%;
+    height: 50vh;
+    width: 250px;
+    padding: 5px 5px 25px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0px;
+
+  }
+
+  .navButtonOpen {
+
+    background-color: rgba(255, 255, 255, 1);
+
+  }
+
+}
+
+@media screen and (max-width: 584px) {
+
+  .navContainer {
+    padding-top: 10px;
+    justify-content: flex-start;
+    padding-left: 5vw;
+
+  }
+
+  .logo{
+
+    width: 75vw;
+
+  }
+
+}
+
+.resize-animation-stopper *:not(.image-anim svg):not(.image-anim path):not(.image-anim p) {
+  animation: none !important;
+  transition: none !important;
+}

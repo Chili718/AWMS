@@ -36,7 +36,7 @@ Styling for the burger menu
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    background-color: rgba(175, 16, 44, 0.8);
+    background-color: rgba(175, 16, 44, 0.7);
     margin: 0;
     position: fixed;
     transition: .3s ease-in-out;

@@ -11,14 +11,14 @@
 
   <link rel="icon" href="images/awms_logo_red_icon.png">
 
-  <link rel="stylesheet" href="https://use.typekit.net/wom1ifl.css">
-
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/pageContent.css">
   <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/contactModal.css">
 
 
   <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
   <script>
     $(document).ready(function() {
@@ -38,7 +38,7 @@
 
       $('.navButtonContainer, .logo').click(function(e) {
         var url = $(this).attr('id') + ".html";
-        console.log(url);
+        //console.log(url);
         if (url != "contact.html") {
 
           e.preventDefault();
@@ -48,16 +48,12 @@
             data: {},
             success: function(data) {
               $('#pageContent').empty();
-              $('#pageContent').html(data);
+              $('#pageContent').html(data).hide().fadeIn("slow");
             },
             error: function() {
               console.log("Error!");
             },
           });
-
-        } else {
-
-          console.log('contact form');
 
         }
 
@@ -105,16 +101,64 @@
 
   </div>
 
-  <div class="pageContent" id="pageContent"></div>
+  <div class="pageContentContainer" id="pageContentContainer">
+
+    <div class="pageContent" id="pageContent"></div>
+
+  </div>
+
 
   <div class="background">
     <img class="clouds" id="clouds" src="images/home_background_clouds_min.png">
   </div>
 
+  <dialog class="contactModal" id="contactModal">
+    <img src="images/awms_logo_red_icon.png" alt="X" class="informationBlockImg">
+    <div class="informationBlock">
+      <!-- <p>Mobile: (317) 514-5027</p>
+      <p>Email: jeff@awms.net</p>
+      <p>Address: 5099 E Paynetown Road, Bloomington, IN 47401</p> -->
+    </div>
+
+    <div class="closeContactModal" id="closeContactModal"><ion-icon name="close-circle-outline"></ion-icon></div>
+
+    <form class="frm" id="frm" method="dialog">
+
+      <h1>Contact Us</h1>
+
+      <div class="allInp">
+        <div class="inp">
+          <input type="text" name="name" id="name" required />
+          <label>Name</label>
+        </div>
+        <div class="inp">
+          <input type="password" name="email" id="email" required />
+          <label>Email</label>
+        </div>
+        <div class="inp">
+          <input type="text" name="subject" id="subject" required />
+          <label>Subject</label>
+        </div>
+        <div class="inp">
+          <textarea class="inpTextArea" name="message" id="message" cols="50" rows="4" required></textarea>
+          <label>Message</label>
+        </div>
+      </div>
+
+      <div class="contactButtonContainer" id="contactSend">
+        <div class="contactButton">Send</div>
+        <input type="submit" style="display: none">
+      </div>
+
+    </form>
+
+  </dialog>
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script type="text/javascript" src="js/burger.js"></script>
+  <script type="text/javascript" src="js/modal.js"></script>
 
 
 </body>

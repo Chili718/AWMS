@@ -1,0 +1,15 @@
+.pageContentContainer {
+
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    z-index: 1;
+    padding-top: clamp(100px, 20vw, 375px);
+
+}
+
+.pageContent {}

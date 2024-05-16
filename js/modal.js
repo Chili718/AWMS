@@ -2,11 +2,11 @@ const contactModal = document.getElementById('contactModal');
 const openContactModal = document.getElementById('contact');
 const closeContactModal = document.getElementById('closeContactModal');
 
-window.onload = function(){
+/* window.onload = function(){
 
     contactModal.showModal();
 
-}
+} */
 openContactModal.addEventListener('click', () => {
  
     contactModal.showModal();

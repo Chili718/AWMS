@@ -11,7 +11,7 @@ html {
 body{
 
   margin: 0;
-  
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -26,7 +26,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: inherit;
+  /* width: inherit; */
   overflow: hidden;
 
 }

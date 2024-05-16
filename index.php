@@ -23,13 +23,30 @@
   <script>
     $(document).ready(function() {
 
+      contentHeight = window.innerHeight - $('.navContainer').height();
+      $(".pageContentContainer").height(contentHeight);
+
+      $(window).resize(function() {
+        contentHeight = window.innerHeight - $('.navContainer').height();
+        $(".pageContentContainer").height(contentHeight);
+
+        /* if ($(window).width() < 921) {
+          $(".nav-links").height(window.innerHeight + 25);
+        } else {
+          $('.nav-links').css('height', '');
+          if ($('.nav-links').hasClass('open'))
+            toggleMenu();
+        } */
+
+      });
+
       $.ajax({
         type: "GET",
         url: "home.html",
         data: {},
         success: function(data) {
-          $('#pageContent').empty();
-          $('#pageContent').html(data);
+          //$('#pageContentContainer').empty();
+          //$('#pageContentContainer').html(data);
         },
         error: function() {
           console.log("Error!");
@@ -47,8 +64,8 @@
             url: url,
             data: {},
             success: function(data) {
-              $('#pageContent').empty();
-              $('#pageContent').html(data).hide().fadeIn("slow");
+              $('#pageContentContainer').empty();
+              $('#pageContentContainer').html(data).hide().fadeIn("slow");
             },
             error: function() {
               console.log("Error!");
@@ -65,7 +82,11 @@
 </head>
 
 <body>
+  <!-- 
+  
+Start of Navigation Bar and Burger Menu
 
+-->
   <div class="navContainer">
     <img class="logo" id="home" src="images/AWMS-Logo.png" alt="">
 
@@ -100,18 +121,67 @@
     </div>
 
   </div>
+  <!-- 
+  
+End of Navigation Bar and Burger Menu
 
+-->
+  <!-- 
+  
+Start of Page Content 
+
+-->
   <div class="pageContentContainer" id="pageContentContainer">
 
-    <div class="pageContent" id="pageContent"></div>
+    <div class="productPageContent">
+
+      <h1>Products</h1>
+
+      <h2>Group -- Voluntary -- Individual</h2>
+
+      <div class="products">
+        <div class="productContainer">
+          <img class="productImg" src="images/dental.png" alt="X">
+          <h1 class="productDescriptor">Dental</h1>
+        </div>
+        <div class="productContainer">
+          <img class="productImg" src="images/vision.png" alt="X">
+          <h1 class="productDescriptor">Vision</h1>
+        </div>
+        <div class="productContainer">
+          <img class="productImg" src="images/hearing.png" alt="X">
+          <h1 class="productDescriptor">Hearing</h1>
+        </div>
+      </div>
+
+    </div>
 
   </div>
+  <!-- 
+  
+End of Page Content 
 
+-->
+  <!-- 
+  
+Start of Background 
+
+-->
 
   <div class="background">
     <img class="clouds" id="clouds" src="images/home_background_clouds_min.png">
+    <div class="towers" id="towers"></div>
   </div>
+  <!-- 
+  
+End of Background
 
+-->
+  <!-- 
+  
+Start of Contact Modal 
+
+-->
   <dialog class="contactModal" id="contactModal">
     <img src="images/awms_logo_red_icon.png" alt="X" class="informationBlockImg">
     <div class="informationBlock">
@@ -153,6 +223,11 @@
     </form>
 
   </dialog>
+  <!-- 
+  
+End of Contact Modal 
+
+-->
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

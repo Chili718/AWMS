@@ -1,15 +1,24 @@
 .pageContentContainer {
-
-    overflow-x: hidden;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: inherit;
-    height: inherit;
-    position: fixed;
     z-index: 1;
-    padding-top: clamp(100px, 20vw, 375px);
+    overflow-y: scroll;
+    /* padding-top: clamp(100px, 20vw, 250px); */
+    -webkit-mask: linear-gradient(180deg, transparent, white 0%);
+    mask: linear-gradient(180deg, transparent, white 0%);
 
 }
 
-.pageContent {}
+.productPageContent{
+
+        
+
+}   
+
+.productPageContent h1, .productPageContent h2{
+
+    text-align: center;
+
+}

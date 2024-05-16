@@ -11,15 +11,17 @@ html {
 body{
 
   margin: 0;
-  overflow: hidden;
+  
   height: 100vh;
   width: 100vw;
+  position: relative;
 
 }
 
 .navContainer{
 
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -102,41 +104,13 @@ body{
   bottom: -2px;
 }
 
-.navButtonContainer:hover i::before {
-  width: 15px;
-  left: 20%;
-  /* background: white; */
-}
-
-.navButtonContainer:hover i::after {
-  width: 15px;
-  left: 80%;
-  /* background: white; */
-}
-
-.navButtonContainer:hover .navButton {
-
-  /* color: white;
-  background-color: #af102c; */
-  clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 15% 100%);
-  /* border-top: 2px white solid;
-  border-bottom: 2px white solid; */
-  /* letter-spacing: 1px;
-  padding: 8px 38px 8px 38px; */
-
-}
-
 .background{
-  /* background-size: cover!important;
-  background-repeat: no-repeat !important;
-  background-position: right;
-  background-image: url(../images/home_background_clouds.png);
-  background-attachment: fixed;
-  margin: 0;
-  transition: transform 20s ease-in-out; */
+
   height: inherit;
   width: inherit;
   position: fixed;
+  top: 0;
+  z-index: -1;
 
 }
 
@@ -161,7 +135,6 @@ body{
 .clouds{
 
   height: inherit;
-  content: "";
   position: fixed;
   /* transition: transform 5s ease-in-out; */
   left: 100%;
@@ -170,7 +143,7 @@ body{
 
 }
 
-.background::after{
+.towers{
 
   background-size: cover;
   background-repeat: no-repeat ;
@@ -179,10 +152,20 @@ body{
   background-attachment: fixed;
   height: inherit;
   width: inherit;
+  position: fixed;
+
+}
+
+.background::after{
+
+  background-color: rgba(255, 255, 255, 0.5);
+  height: inherit;
+  width: inherit;
   content: "";
   position: fixed;
 
 }
+
 @media screen and (max-width: 1280px) {
 
   .navButton{

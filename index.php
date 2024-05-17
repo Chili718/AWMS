@@ -103,16 +103,16 @@ Start of Navigation Bar and Burger Menu
         <div class="navButton" id="home">Home</div><i></i>
       </div> -->
       <div class="navButtonContainer" id="services">
-        <div class="navButton">Our Services</div><i></i>
+        <div class="navButton">Services</div><i></i>
       </div>
       <div class="navButtonContainer" id="products">
-        <div class="navButton">Our Products</div><i></i>
+        <div class="navButton">Products</div><i></i>
       </div>
       <div class="navButtonContainer" id="about">
         <div class="navButton">About Us</div><i></i>
       </div>
       <div class="navButtonContainer" id="clients">
-        <div class="navButton">Our Clients</div><i></i>
+        <div class="navButton">Clients</div><i></i>
       </div>
       <div class="navButtonContainer" id="contact">
         <div class="navButton">Contact</div><i></i>
@@ -135,27 +135,66 @@ Start of Page Content
 
     <div class="productPageContent">
 
-      <h1>Products</h1>
+      <h1 class="productPageTitle">Our Products</h1>
 
       <h2>Group -- Voluntary -- Individual</h2>
 
+
+
       <div class="products">
         <div class="productContainer">
-          <img class="productImg" src="images/dental.png" alt="X">
-          <h1 class="productDescriptor">Dental</h1>
+          <img class="productImg" id="dental" src="images/dental.png" alt="X">
+          <h3 class="productDescriptor">Dental</h3>
         </div>
         <div class="productContainer">
-          <img class="productImg" src="images/vision.png" alt="X">
-          <h1 class="productDescriptor">Vision</h1>
+          <img class="productImg" id="vision" src="images/vision.png" alt="X">
+          <h3 class="productDescriptor">Vision</h3>
         </div>
         <div class="productContainer">
-          <img class="productImg" src="images/hearing.png" alt="X">
-          <h1 class="productDescriptor">Hearing</h1>
+          <img class="productImg" id="hearing" src="images/hearing.png" alt="X">
+          <h3 class="productDescriptor">Hearing</h3>
+        </div>
+        <div class="productContainer">
+          <img class="productImg" id="illness" src="images/critical_illness.png" alt="X">
+          <h3 class="productDescriptor">Critical Illness</h3>
+        </div>
+        <div class="productContainer">
+          <img class="productImg" id="accident" src="images/accident.png" alt="X">
+          <h3 class="productDescriptor">Accident</h3>
+        </div>
+        <div class="productContainer">
+          <img class="productImg" id="limited" src="images/limited_medical.png" alt="X">
+          <h3 class="productDescriptor">Limited Medical</h3>
         </div>
       </div>
 
-    </div>
 
+
+      <div class="productDetails">
+        <div class="productDetailsContainer" id="benefit">
+          <h1 class="detailsTitle">Benefit Options</h1>
+          <ul class="productDetailsList">
+
+          </ul>
+        </div>
+        <div class="productDetailsContainer" id="features">
+          <h1 class="detailsTitle">Key Features</h1>
+          <ul class="productDetailsList">
+
+          </ul>
+        </div>
+        <div class="productDetailsContainer" id="rating">
+          <h1 class="detailsTitle">Rating Options</h1>
+          <ul class="productDetailsList">
+
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="bottom"></div>
+    </div>
+    <script type="text/javascript" src="js/products.js"></script>
   </div>
   <!-- 
   

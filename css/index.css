@@ -34,8 +34,8 @@ body{
 .logo{
 
   min-width: 230px;
-  width: 68vw;
-  max-width: 1250px;
+  width: 55vw;
+  max-width: 1000px;
   height: auto;
   cursor: pointer;
 }
@@ -69,7 +69,7 @@ body{
   background-color: rgba(255, 255, 255, 0.7);
   clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
   color: #020b44;
-  font-size: 1.4em;
+  font-size: 1.2em;
   border-top: 2px #af102c solid;
   border-bottom: 2px #af102c solid;
   transition: 0.4s ease;

@@ -208,16 +208,9 @@ select:-webkit-autofill:focus {
 
 @media screen and (max-width: 768px) {
 
-    .contactButtonContainer{
-
-        right: unset;
-
-    }
-
     .contactButton{
      
         font-size: 1.6rem;
-        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%)
 
     }
 
@@ -235,6 +228,18 @@ select:-webkit-autofill:focus {
 }
 
 @media screen and (max-width: 425px) {
+
+    .contactButton {
+    
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%);
+    
+    }
+
+    .contactButtonContainer {
+    
+        right: unset;
+    
+    }
 
     .contactModal{
 

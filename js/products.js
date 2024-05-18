@@ -2,6 +2,33 @@ const products = document.querySelectorAll(".productImg");
 const benefit = document.querySelectorAll('#benefit ul');
 const keyFeatures = document.querySelectorAll('#features ul');
 const rating = document.querySelectorAll('#rating ul');
+var previousProduct;
+
+var mySwiper = new Swiper('.swiper-container', {
+
+    effect: "coverflow",
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: "2",
+    slideToClickedSlide: true,
+    grabCursor: true,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 5,
+        depth: 100,
+        modifier: 5,
+        slideShadows: false
+    },
+    navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next"
+    },
+    /* pagination: {
+        el: ".swiper-pagination",
+        clickable: false
+    } */
+
+});
 
 products.forEach(product => {
 
@@ -10,6 +37,16 @@ products.forEach(product => {
         /* benefit[0].classList.toggle("productDetailsList");
         keyFeatures[0].classList.toggle("productDetailsList");
         rating[0].classList.toggle("productDetailsList"); */
+
+        if (previousProduct != null) {
+
+
+            previousProduct.classList.toggle('activeProduct');
+
+        }
+
+        previousProduct = product;
+        product.classList.toggle('activeProduct');
 
         benefit[0].style.animation = `none`;
         keyFeatures[0].style.animation = `none`;

@@ -19,6 +19,11 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!-- swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
   <script>
     $(document).ready(function() {
@@ -139,6 +144,73 @@ Start of Page Content
 
       <h2>Group -- Voluntary -- Individual</h2>
 
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="productContainer swiper-slide">
+            <img class="productImg" id="dental" src="images/dental.png" alt="X">
+            <h3 class="productDescriptor">Dental</h3>
+          </div>
+          <div class="productContainer swiper-slide">
+            <img class="productImg" id="vision" src="images/vision.png" alt="X">
+            <h3 class="productDescriptor">Vision</h3>
+          </div>
+          <div class="productContainer swiper-slide">
+            <img class="productImg" id="hearing" src="images/hearing.png" alt="X">
+            <h3 class="productDescriptor">Hearing</h3>
+          </div>
+          <div class="productContainer swiper-slide">
+            <img class="productImg" id="illness" src="images/critical_illness.png" alt="X">
+            <h3 class="productDescriptor">Critical Illness</h3>
+          </div>
+          <div class="productContainer swiper-slide">
+            <img class="productImg" id="accident" src="images/accident.png" alt="X">
+            <h3 class="productDescriptor">Accident</h3>
+          </div>
+          <div class="productContainer swiper-slide">
+            <img class="productImg" id="limited" src="images/limited_medical.png" alt="X">
+            <h3 class="productDescriptor">Limited Medical</h3>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <!--     <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <div class="productDetails">
+        <div class="productDetailsContainer" id="benefit">
+          <h1 class="detailsTitle">Benefit Options</h1>
+          <ul class="productDetailsList">
+
+          </ul>
+        </div>
+        <div class="productDetailsContainer" id="features">
+          <h1 class="detailsTitle">Key Features</h1>
+          <ul class="productDetailsList">
+
+          </ul>
+        </div>
+        <div class="productDetailsContainer" id="rating">
+          <h1 class="detailsTitle">Rating Options</h1>
+          <ul class="productDetailsList">
+
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="bottom"></div>
+
+      <!-- <h1 class="productPageTitle">Our Products</h1>
+
+      <h2>Group -- Voluntary -- Individual</h2>
+
 
 
       <div class="products">
@@ -192,7 +264,7 @@ Start of Page Content
       </div>
 
 
-      <div class="bottom"></div>
+      <div class="bottom"></div> -->
     </div>
     <script type="text/javascript" src="js/products.js"></script>
   </div>

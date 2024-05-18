@@ -14,7 +14,7 @@ var mySwiper = new Swiper('.swiper-container', {
     grabCursor: true,
     coverflowEffect: {
         rotate: 0,
-        stretch: 5,
+        stretch: 6,
         depth: 100,
         modifier: 5,
         slideShadows: false
@@ -34,19 +34,16 @@ products.forEach(product => {
 
     product.addEventListener("click", () =>{
 
-        /* benefit[0].classList.toggle("productDetailsList");
-        keyFeatures[0].classList.toggle("productDetailsList");
-        rating[0].classList.toggle("productDetailsList"); */
-
         if (previousProduct != null) {
 
-
             previousProduct.classList.toggle('activeProduct');
+            previousProduct.nextElementSibling.classList.toggle('activeProductText');
 
         }
 
         previousProduct = product;
         product.classList.toggle('activeProduct');
+        product.nextElementSibling.classList.toggle('activeProductText');
 
         benefit[0].style.animation = `none`;
         keyFeatures[0].style.animation = `none`;

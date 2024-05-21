@@ -178,8 +178,8 @@ Start of Page Content
         <!--     <div class="swiper-pagination"></div> -->
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev swiper-arrow"></div>
+        <div class="swiper-button-next swiper-arrow"></div>
         <!-- <div class="swiper-pagination"></div> -->
       </div>
 

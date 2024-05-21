@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/productPage.css">
+  <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/contactModal.css">
 
@@ -138,11 +139,36 @@ Start of Page Content
 -->
   <div class="pageContentContainer" id="pageContentContainer">
 
-    <div class="aboutContainer">
+    <!-- <div class="aboutGrid">
 
       <div class="one"></div>
       <div class="two"></div>
       <div class="three"></div>
+
+    </div> -->
+
+    <div class="aboutPageContainer">
+
+      <h1 class="aboutPageTitle">About Us</h1>
+
+      <div class="personContainer">
+        <div class="titleRibbon"> The Company</div>
+        <div class="descriptionBox">Actuarial Worksite Marketing Services, Inc. provides actuarial and data analytic consulting services for employer sponsored group and individual insurance products including Dental, Vision, Critical Illness, Accident, Hearing, and Limited Medical. Our goals are to develop, price, and provide clients with new marketable product solutions while profitably managing existing books of business. As actuaries and data scientists we are uniquely trained and qualified to accomplish these goals. In cooperation with enterprise data warehouse clients, AWMS is setting the industry standard for data analytics, visualization reporting, and dental pricing methodology.</div>
+      </div>
+      <div class="personContainer">
+        <div class="titleRibbon">Jeff DeCapua</div>
+        <div class="descriptionBox">Jeff's background includes over 35 years of actuarial experience in the health insurance industry. He was the dental pricing actuary at Protective Life Insurance Company, 2nd VP of Actuarial and Underwriting at Conseco Health Insurance Company, and VP in the Worksite Marketing Division of Transamerica. Jeff has worked as a consulting actuary for 20 years and specializes in group and individual Dental, Vision, Hearing, Critical Illness and Accident Insurance products.</div>
+      </div>
+      <div class="personContainer">
+        <div class="titleRibbon"> Jeff Blacker</div>
+        <div class="descriptionBox">Jeff has over 25 years of actuarial experience including consulting projects in Nicaragua, Guatemala, India, Kenya and the United States. His work has included product development, pricing, reserve calculations, and manual rating processes. His projects include, Statements of Actuarial Opinion, actual to expected claims analysis, specified disease incidence rate and long term care claim persistency studies. In addition, Jeff has over 10 years of experience using and coding Polysystems Health Master for LTC, CII, Medicare Supplement as well as ROP and Cash Value riders.</div>
+      </div>
+      <div class="personContainer">
+        <div class="titleRibbon"> Jacob Decapua</div>
+        <div class="descriptionBox">Jacob graduated in May 2021 with a M.S. in Mathematics from Ball State University. His role as a Data Quality Analyst for Meta involves leading the data collection and reporting for multiple research locations. In addition, as Data Scientist at AWMS, he is the lead programmer and analyst assisting in all decision making processes. His responsibilities include data engineering, data cleaning, data visualization, data analysis, and insight reporting.</div>
+      </div>
+
+      <div class="bottom"></div>
 
     </div>
 

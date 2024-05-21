@@ -21,39 +21,49 @@
 .aboutGrid{
     margin-top: 3%;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 300px;
-    height: 300px;
     background-color: #2196F3;
     padding: 10px;
-    gap: 10px;
 
 }
 
-.one, .two, .three{
- 
-    column-span: 2;
-    padding: 20px 0px;
-    width: 5px;
-    height: 5px;
-}
+.companyLogo{
 
-.one{
-
-    background-color: red;
+    position: absolute;
+    left: -50%;
+    top: 15%;
 
 }
 
-.two{
+.aboutGrid div:nth-child(1){
 
-    background-color: blue;
+    /* background-color: red; */
+    grid-row: 1/2;
+    grid-column: 3/6;
 
 }
 
-.three{
+.aboutGrid div:nth-child(2){
 
-    background-color: green;
+    /* background-color: blue; */
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+
+.aboutGrid div:nth-child(3){
+
+    /* background-color: green; */
+    grid-row: 2/3;
+    grid-column: 5/7;
+
+}
+
+.aboutGrid div:nth-child(4){
+
+    /* background-color: orange; */
+    grid-row: 3/4;
+    grid-column: 3/5;
 
 }
 
@@ -83,8 +93,8 @@
             polygon(100% 0, 0 0, 0 calc(100% - var(--f)), var(--f) 100%,
             var(--f) calc(100% - var(--f)), 100% calc(100% - var(--f)),
             calc(100% - var(--r)) calc(50% - var(--f)/2));
-    font-size: 2em;
-    height: 45px;
+    font-size: 1.8em;
+    height: 40px;
     padding-top: 5px;
 
 }
@@ -96,7 +106,7 @@
     padding: 45px 60px 25px 25px;
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
     width: fit-content;
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: clamp(220px, 70vw, 465px);
 
 

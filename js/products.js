@@ -14,14 +14,25 @@ var mySwiper = new Swiper('.swiper-container', {
     grabCursor: true,
     coverflowEffect: {
         rotate: 0,
-        stretch: 6,
+        stretch: 0,
         depth: 100,
         modifier: 5,
-        slideShadows: false
+        slideShadows: false,
     },
     navigation: {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next"
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: false
+    },
+    breakpoints: {
+        568: {
+            slidesPerView: 3,
+            stretch: 6,
+            /* spaceBetween: 40, */
+        },
     },
     /* pagination: {
         el: ".swiper-pagination",

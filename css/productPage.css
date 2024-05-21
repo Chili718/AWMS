@@ -1,27 +1,4 @@
-.pageContentContainer {
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1;
-    overflow-y: scroll;
-    /* padding-top: clamp(100px, 20vw, 250px); */
-    -webkit-mask: linear-gradient(180deg, transparent, white 4%);
-    mask: linear-gradient(180deg, transparent, white 4%);
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-    overflow-x: hidden;
-}
 
-.bottom{
-
-    width: 1px;
-    height: 100px;
-
-}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .pageContentContainer::-webkit-scrollbar {
@@ -58,14 +35,26 @@
 .swiper-button-prev {
     color: black !important;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 8px 16px;
+    padding: 1px 10px;
     border-radius: 100%;
     font-size: 30px !important;
+
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
     content: "" !important;
+}
+
+.swiper-pagination{
+
+    z-index: 0 !important;
+    margin-bottom: -5px;
+
+}
+
+.swiper-pagination-bullet {
+    background: rgba(175, 16, 44, 0.8) !important;
 }
 
 .productPageTitle{
@@ -75,7 +64,7 @@
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     color: white;
     font-size: 1.7em;
-
+    margin-top: 3%;
 }
 
 .productPageContent h2:first-of-type{
@@ -86,6 +75,7 @@
     color: white;
     text-wrap: nowrap;
     font-size: 1.1em;
+    margin-top: 0;
 
 }
 
@@ -165,7 +155,7 @@
     align-items: flex-start;
     justify-content: space-between;
     width: clamp(635px, 80vw, 1000px);
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
 
 }
 
@@ -192,7 +182,7 @@
 
 .productDetailsList{
 
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 15px 0px 15px 30px;
     width: 75%;
     margin: 0;
@@ -219,6 +209,16 @@
 
         opacity: 1;
         transform: translateY(0px);
+
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+
+    .productPageTitle{
+
+        margin-top: 4%;
 
     }
 
@@ -256,6 +256,44 @@
     .productDetails li{
 
         font-size: 0.9em;
+
+    }
+
+}
+
+@media screen and (max-width: 568px) {
+
+    .swiper-container {
+
+        height: 300px;
+        margin-top: -50px;
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        
+        margin-top: 100px !important;
+
+    }
+
+    .swiper-button-next {
+        margin-right: clamp(25px, 8vw, 100px);
+    }
+
+    .swiper-button-prev {
+        margin-left: clamp(25px, 8vw, 100px);
+    }
+
+    .productDetails{
+
+        margin-top: 25px;
+
+    }
+
+    .swiper-pagination{
+
+        margin-bottom: 10px;
 
     }
 

@@ -104,6 +104,31 @@ body{
   bottom: -2px;
 }
 
+.pageContentContainer {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  overflow-y: scroll;
+  /* padding-top: clamp(100px, 20vw, 250px); */
+  -webkit-mask: linear-gradient(180deg, transparent, white 4%);
+  mask: linear-gradient(180deg, transparent, white 4%);
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow-x: hidden;
+}
+
+.bottom {
+
+  width: 1px;
+  height: 100px;
+
+}
+
 .background{
 
   height: inherit;

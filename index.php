@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/productPage.css">
   <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/contactModal.css">
 
@@ -139,37 +140,85 @@ Start of Page Content
 -->
   <div class="pageContentContainer" id="pageContentContainer">
 
-    <!-- <div class="aboutContainer">
+    <div class="servicesContainer">
 
-      <h1 class="aboutPageTitle">About Us</h1>
+      <h1 class="servicesPageTitle">Our Services</h1>
 
-      <div class="personContainer">
-        
-        <div class="titleRibbon"> The Company</div>
-        <div class="descriptionBox companyBox">Actuarial Worksite Marketing Services, Inc. provides actuarial and data analytic consulting services for employer sponsored group and individual insurance products including Dental, Vision, Critical Illness, Accident, Hearing, and Limited Medical. Our goals are to develop, price, and provide clients with new marketable product solutions while profitably managing existing books of business. As actuaries and data scientists we are uniquely trained and qualified to accomplish these goals. In cooperation with enterprise data warehouse clients, AWMS is setting the industry standard for data analytics, visualization reporting, and dental pricing methodology.</div>
-      </div>
+      <div class="servicesGrid">
 
-      <div class="aboutContainerInner">
-
-        <div class="personContainer">
-          <div class="titleRibbon">Jeff DeCapua</div>
-          <div class="descriptionBox">Jeff's background includes over 35 years of actuarial experience in the health insurance industry. He was the dental pricing actuary at Protective Life Insurance Company, 2nd VP of Actuarial and Underwriting at Conseco Health Insurance Company, and VP in the Worksite Marketing Division of Transamerica. Jeff has worked as a consulting actuary for 20 years and specializes in group and individual Dental, Vision, Hearing, Critical Illness and Accident Insurance products.</div>
-        </div>
-        <div class="personContainer">
-          <div class="titleRibbon"> Jeff Blacker</div>
-          <div class="descriptionBox">Jeff has over 25 years of actuarial experience including consulting projects in Nicaragua, Guatemala, India, Kenya and the United States. His work has included product development, pricing, reserve calculations, and manual rating processes. His projects include, Statements of Actuarial Opinion, actual to expected claims analysis, specified disease incidence rate and long term care claim persistency studies. In addition, Jeff has over 10 years of experience using and coding Polysystems Health Master for LTC, CII, Medicare Supplement as well as ROP and Cash Value riders.</div>
+        <div class="service">
+          <h2 class="serviceTitle serviceTitleLeft">Product Development</h2>
+          <ul class="serviceList">
+            <li>Policy Language</li>
+            <li>Underwriting Guidelines</li>
+            <li>Marketing Guidelines</li>
+            <li>ACA Compliant Plans</li>
+          </ul>
         </div>
 
-      </div>
+        <div class="service">
+          <h2 class="serviceTitle serviceTitleLeft">Actuarial Financial Services</h2>
+          <ul class="serviceList">
+            <li>Reserve Valuations</li>
+            <li>Statements of Actuarial Opinion</li>
+            <li>Financial Forecasting Models</li>
+            <li>Actuarial Valuations of Plan Changes</li>
+          </ul>
+        </div>
 
-      <div class="personContainer">
-        <div class="titleRibbon"> Jacob Decapua</div>
-        <div class="descriptionBox">Jacob graduated in May 2021 with a M.S. in Mathematics from Ball State University. His role as a Data Quality Analyst for Meta involves leading the data collection and reporting for multiple research locations. In addition, as Data Scientist at AWMS, he is the lead programmer and analyst assisting in all decision making processes. His responsibilities include data engineering, data cleaning, data visualization, data analysis, and insight reporting.</div>
+        <div class="service">
+          <h2 class="serviceTitle serviceTitleRight">Product Pricing</h2>
+          <ul class="serviceList">
+            <li>Fully Insured Products - PPO, MAC, SBP, Indemnity</li>
+            <li>DHMO/Capitated Products</li>
+            <li>Individual and Group Products</li>
+            <li>Voluntary and Employer Paid Products</li>
+            <li>Manual Rating Software Systems</li>
+            <li>Renewal Rating Software Systems</li>
+            <li>Dollar Based Dental</li>
+            <li>Hybrid Dental Plans</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h2 class="serviceTitle serviceTitleRight">Experience Analysis</h2>
+          <ul class="serviceList">
+            <li>Utilization Studies</li>
+            <li>Utilization, Price, and Cost Trend Analysis</li>
+            <li>Claim Cost and Loss Ratio Trend Analysis</li>
+            <li>Persistency/Lapse Studies</li>
+            <li>Loss Ratios by Risk Factors</li>
+            <li>Durational Loss Ratio Studies</li>
+            <li>Scenario Studies</li>
+            <li>etc.</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h2 class="serviceTitle serviceTitleLeft">Actuarial Rate Filings</h2>
+          <ul class="serviceList">
+            <li>Actuarial Memorandums</li>
+            <li>Annual Rate Certifications</li>
+            <li>ACA Rate Filings</li>
+            <li>State Specific Certifications</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h2 class="serviceTitle serviceTitleLeft">Data Analytics</h2>
+          <ul class="serviceList">
+            <li>Data Cleaning</li>
+            <li>Forecast Modeling</li>
+            <li>Insight Evaluation</li>
+            <li>Visualization and Analysis</li>
+          </ul>
+        </div>
+
       </div>
 
       <div class="bottom"></div>
 
-    </div> -->
+    </div>
 
   </div>
   <!-- 

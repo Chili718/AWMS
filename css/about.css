@@ -15,11 +15,11 @@
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     color: white;
     font-size: 1.7em;
-    margin-top: 3%;
+    margin-top: 30px;
 }
 
 .aboutContainer{
-    margin-top: 2%;
+    /* margin-top: 2%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +78,7 @@
 .descriptionBox{
 
     /* background-color: rgba(175, 16, 44, 0.7); */
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 45px 60px 25px 25px;
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
     width: fit-content;
@@ -111,7 +111,7 @@
 
     .personContainer {
 
-        margin: 7% 5%;
+        margin: 25px 5%;
 
     }
 
@@ -121,7 +121,7 @@
 
     .aboutPageTitle{
 
-        margin-top: 10%;
+        margin-top: 30px;
 
     }
 
@@ -147,7 +147,7 @@
 
     .personContainer{
 
-        margin: 12% 5%;
+        margin: 30px 5%;
 
     }
 

@@ -61,7 +61,7 @@
 
       $('.navButtonContainer, .logo').click(function(e) {
         var url = $(this).attr('id') + ".html";
-        //console.log(url);
+        console.log(url);
         if (url != "contact.html") {
 
           e.preventDefault();

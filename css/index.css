@@ -113,8 +113,8 @@ body{
   z-index: 1;
   overflow-y: scroll;
   /* padding-top: clamp(100px, 20vw, 250px); */
-  -webkit-mask: linear-gradient(180deg, transparent, white 4%);
-  mask: linear-gradient(180deg, transparent, white 4%);
+  -webkit-mask: linear-gradient(180deg, transparent, white 35px);
+  mask: linear-gradient(180deg, transparent, white 35px);
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -248,6 +248,12 @@ body{
   .navButtonOpen {
 
     background-color: rgba(255, 255, 255, 1);
+
+  }
+
+  .logo{
+
+    width: 68vw;
 
   }
 

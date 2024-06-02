@@ -6,18 +6,25 @@
     border: none;
     position: relative;
     overflow: visible;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
     outline: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 
+}
+.clientModal::-webkit-scrollbar {
+    display: none;
 }
 
 .clientModal::backdrop {
 
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .closeClientModal {
@@ -47,7 +54,7 @@
 .clientListHolder{
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
 }
@@ -55,8 +62,24 @@
 .clientList{
 
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px 20px;
+    background-color: rgba(235, 235, 235, 0.7);
+    padding: 10px 20px 10px 20px;
+    list-style-type: none;
+    line-height: 24px;
+    font-size: 1.1em;
+    margin-bottom: 0;
+
+}
+
+.clientListHolder ul:nth-child(2){
+
+    margin-left: 10px;
+
+}
+
+.clientListHolder ul:nth-child(1) {
+
+    margin-right: 10px;
 
 }
 
@@ -74,7 +97,9 @@
 
     width: clamp(315px, 75vw, 975px);
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 8px 10px 8px 10px;
+    padding: 15px 40px 15px 40px;
+    font-size: 1.2em;
+    clip-path: polygon(100% 0, 98% 50%, 100% 100%, 0% 100%, 2% 50%, 0% 0%);
 
 }
 
@@ -94,5 +119,70 @@
     width: 80vw;
     height: 10px;
     background-color: white;
+
+}
+
+@media screen and (max-width: 720px){
+
+    .clientListHolder{
+
+        flex-direction: column;
+
+    }
+
+    .clientListHolder ul:nth-child(2) {
+
+        margin-top: 0;
+        margin-left: 0;
+        padding-top: 0;
+
+    }
+
+    .clientListHolder ul:nth-child(1){
+
+        padding-bottom: 0;
+        margin-right: 0;
+
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+    .closeClientModal {
+
+        top: 15px;
+        right: 15px;
+        font-size: 40px;
+
+    }
+
+    .clientList{
+
+        font-size: 1em;
+
+    }
+    .clientModal{
+
+        padding: 16px;
+
+    }
+
+    .clientModalTitle{
+
+        font-size: 1.5em;
+        margin-bottom: 0;
+        margin-top: 30px;
+
+    }
+
+}
+
+@media (hover: hover) {
+    .closeClientModal:hover {
+
+        transform: scale(1.1);
+
+    }
 
 }

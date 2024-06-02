@@ -34,3 +34,27 @@ closeClientModal.addEventListener('click', () => {
     clientModal.close();
 
 });
+
+contactModal.addEventListener("click", e => {
+    const dialogDimensions = contactModal.getBoundingClientRect();
+    if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+    ) {
+        contactModal.close();
+    }
+});
+
+clientModal.addEventListener("click", e => {
+    const dialogDimensions = clientModal.getBoundingClientRect();
+    if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+    ) {
+        clientModal.close();
+    }
+});

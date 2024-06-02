@@ -1,0 +1,98 @@
+/* Includes CSS for client modal and client section on home page */
+
+.clientModal {
+
+    border-radius: 1%;
+    border: none;
+    position: relative;
+    overflow: visible;
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+
+}
+
+.clientModal::backdrop {
+
+    background: rgba(0, 0, 0, 0);
+}
+
+.closeClientModal {
+
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 50px;
+    color: #af102c;
+    opacity: 0.8;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+
+.clientModalTitle {
+
+    padding: 8px 50px 8px 50px;
+    background-color: rgba(2, 11, 68, 1);
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+    color: white;
+    font-size: 1.7em;
+    width: fit-content;
+
+}
+
+.clientListHolder{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.clientList{
+
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+
+}
+
+.clientSectionTitle{
+
+    padding: 8px 50px 8px 50px;
+    color: white;
+    font-size: 1.7em;
+    background-color: rgba(175, 16, 44, 0.8);
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+
+}
+
+.clientSectionDescription{
+
+    width: clamp(315px, 75vw, 975px);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 10px 8px 10px;
+
+}
+
+.clientListButton{
+
+    background-color: rgba(2, 11, 68, 1);
+    cursor: pointer;
+    padding: 16px 20px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.logoCarousel{
+
+    padding: 8px;
+    width: 80vw;
+    height: 10px;
+    background-color: white;
+
+}

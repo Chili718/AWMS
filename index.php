@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/productPage.css">
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/clients.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/contactModal.css">
 
@@ -115,11 +116,11 @@ Start of Navigation Bar and Burger Menu
       <div class="navButtonContainer" id="products">
         <div class="navButton">Products</div><i></i>
       </div>
-      <div class="navButtonContainer" id="about">
-        <div class="navButton">About Us</div><i></i>
-      </div>
       <div class="navButtonContainer" id="clients">
         <div class="navButton">Clients</div><i></i>
+      </div>
+      <div class="navButtonContainer" id="about">
+        <div class="navButton">About Us</div><i></i>
       </div>
       <div class="navButtonContainer" id="contact">
         <div class="navButton">Contact</div><i></i>
@@ -140,105 +141,13 @@ Start of Page Content
 -->
   <div class="pageContentContainer" id="pageContentContainer">
 
-    <!-- <div class="servicesContainer">
+    <h2 class="clientSectionTitle">Our Clients</h2>
 
-      <h1 class="servicesPageTitle">Our Services</h1>
+    <p class="clientSectionDescription">We serve our clients in several different capacities from one time ad hoc projects to long term assignments. Client projects include product development, pricing (i.e. manual rating, credibility rating, and experience rating), policy language, actuarial rate filings, reserve valuation, data analytics, experience reporting & forecasting (i.e. utilization, price, cost, and loss ratio), financial projections, profit forecasting, and business modeling.</p>
 
-      <div class="servicesGrid">
+    <div class="logoCarousel">Logo Carousel</div>
 
-        <div class="service">
-          <h2 class="serviceTitle">Product Development</h2>
-          <ul class="serviceList">
-            <li>Policy Language</li>
-            <li>Underwriting Guidelines</li>
-            <li>Marketing Guidelines</li>
-            <li>ACA Compliant Plans</li>
-          </ul>
-        </div>
-
-        <div class="service">
-          <h2 class="serviceTitle">Actuarial Financial Services</h2>
-          <ul class="serviceList">
-            <li>Reserve Valuations</li>
-            <li>Statements of Actuarial Opinion</li>
-            <li>Financial Forecasting Models</li>
-            <li>Actuarial Valuations of Plan Changes</li>
-          </ul>
-        </div>
-
-        <div class="service">
-          <h2 class="serviceTitle">Product Pricing</h2>
-          <ul class="serviceList">
-            <li>Fully Insured Products - PPO, MAC, SBP, Indemnity</li>
-            <li>DHMO/Capitated Products</li>
-            <li>Individual and Group Products</li>
-            <li>Voluntary and Employer Paid Products</li>
-            <li>Manual Rating Software Systems</li>
-            <li>Renewal Rating Software Systems</li>
-            <li>Dollar Based Dental</li>
-            <li>Hybrid Dental Plans</li>
-          </ul>
-        </div>
-
-        <div class="service">
-          <h2 class="serviceTitle">Experience Analysis</h2>
-          <ul class="serviceList">
-            <li>Utilization Studies</li>
-            <li>Utilization, Price, and Cost Trend Analysis</li>
-            <li>Claim Cost and Loss Ratio Trend Analysis</li>
-            <li>Persistency/Lapse Studies</li>
-            <li>Loss Ratios by Risk Factors</li>
-            <li>Durational Loss Ratio Studies</li>
-            <li>Scenario Studies</li>
-            <li>etc.</li>
-          </ul>
-        </div>
-
-        <div class="service">
-          <h2 class="serviceTitle">Actuarial Rate Filings</h2>
-          <ul class="serviceList">
-            <li>Actuarial Memorandums</li>
-            <li>Annual Rate Certifications</li>
-            <li>ACA Rate Filings</li>
-            <li>State Specific Certifications</li>
-          </ul>
-        </div>
-
-        <div class="service">
-          <h2 class="serviceTitle">Data Analytics</h2>
-          <ul class="serviceList">
-            <li>Data Cleaning</li>
-            <li>Forecast Modeling</li>
-            <li>Insight Evaluation</li>
-            <li>Visualization and Analysis</li>
-          </ul>
-        </div>
-
-        <div class="service">
-          <h2 class="serviceTitle">Underwriting Pricing Systems</h2>
-          <ul class="serviceList">
-            <li>New Business Manual Rating Systems</li>
-            <li>Small Group Renewal Rating Systems</li>
-            <li>Large Group Experience Rating Systems</li>
-            <li>Credibility Rating Systems</li>
-          </ul>
-        </div>
-
-        <div class="service">
-          <h2 class="serviceTitle">Industry Benchmarking</h2>
-          <ul class="serviceList">
-            <li>Utilization, Fee Schedules, and UCR</li>
-            <li>Provider/Network</li>
-            <li>Plan Design</li>
-            <li>Rate Level</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="bottom"></div>
-
-    </div> -->
+    <h3 class="clientListButton" id="openClientModal">Full Client List</h3>
 
   </div>
   <!-- 
@@ -261,6 +170,109 @@ Start of Background
 End of Background
 
 -->
+
+  <!-- 
+  
+Start of Client Modal 
+
+-->
+
+  <dialog class="clientModal" id="clientModal">
+    <div class="closeClientModal" id="closeClientModal"><ion-icon name="close-circle-outline"></ion-icon></div>
+    <h2 class="clientModalTitle">Client List</h2>
+    <div class="clientListHolder">
+      <ul class="clientList">
+        <li>Guardian Life Insurance Company</li>
+        <li>United Concordia</li>
+        <li>Companion Life Insurance Company</li>
+        <li>P&R Dental Strategies</li>
+        <li>Dental Network of America</li>
+        <li>WellPoint Dental Services</li>
+        <li>Continental Life Insurance Company</li>
+        <li>DentaQuest</li>
+        <li>Delta Dental of Michigan </li>
+        <li>Delta Dental of Arkansas</li>
+        <li>Delta Dental of Idaho</li>
+        <li>Delta Dental of Massachusetts</li>
+        <li>Delta Dental of Kansas</li>
+        <li>Delta Dental of Oklahoma</li>
+        <li>SafeGuard Health Enterprises</li>
+        <li>Assurant (Fortis Life and Fortis Benefits)</li>
+        <li>Dearborn Life Insurance Company</li>
+        <li>Renaissance Life and Health Insurance Company</li>
+        <li>Davis Vision</li>
+        <li>Superior Vision</li>
+        <li>PerioProtect</li>
+        <li>Merchant Benefit Administration</li>
+        <li>Argus Dental</li>
+        <li>Employers Select Benefits</li>
+        <li>Transamerica Assurance Company</li>
+        <li>Health Resources, Inc.</li>
+        <li>Premera Blue Cross of Washington</li>
+        <li>Gerber Life Insurance Company</li>
+        <li>Premier Access Dental Plans</li>
+        <li>DentistDirect Dental Plans</li>
+        <li>Bright Benefits</li>
+        <li>PrimeCare Benefits Group</li>
+        <li>Risk Solutions Resources, Inc.</li>
+        <li>Global Preferred Solutions, Inc.</li>
+        <li>Time Insurance Company</li>
+        <li>Conseco Insurance Companies</li>
+        <li>Starmount Life Insurance Company</li>
+        <li>Federal Life Insurance Company</li>
+        <li>American Public Life Insurance Company</li>
+      </ul>
+      <ul class="clientList">
+        <li>Aflac (American Family Life)</li>
+        <li>Dental Care Plus</li>
+        <li>Beam Dental</li>
+        <li>National Guardian Life Insurance Company</li>
+        <li>Nationwide Life Insurance Company</li>
+        <li>Kansas City Life Insurance Company</li>
+        <li>CareFirst BlueCross BlueShield of Maryland</li>
+        <li>American International Group (AIG)</li>
+        <li>American Fidelity Assurance Company</li>
+        <li>Careington International Corporation</li>
+        <li>Louisiana Sate University</li>
+        <li>Fidelity Security Life Insurance Company</li>
+        <li>Avesis</li>
+        <li>Citizens Security Life Insurance Company</li>
+        <li>Mutual of Omaha Life insurance Company</li>
+        <li>Key Life Insurance Company</li>
+        <li>Southland National Insurance Corporation</li>
+        <li>SurePoint Reinsurance Advisors, LLC</li>
+        <li>Niagara Life Insurance Company</li>
+        <li>Blue Cross Blue Shield of South Carolina</li>
+        <li>Blue Cross Blue Shield of Minnesota</li>
+        <li>Corvesta, Inc.</li>
+        <li>Blue Cross Blue Shield of Tennessee</li>
+        <li>Liberty Dental Plans</li>
+        <li>SeeChange Life Insurance Company</li>
+        <li>John Alden Life Insurance Company</li>
+        <li>Lewer Life Insurance Company</li>
+        <li>Cypress Dental Administrators</li>
+        <li>Commercial Travelers Life Insurance Company</li>
+        <li>Healthy Choices Benefits</li>
+        <li>Nevada Dental Benefits</li>
+        <li>LifeMap Assurance Company</li>
+        <li>Excel Vision</li>
+        <li>Group Vision Services</li>
+        <li>Level Benefits</li>
+        <li>Humana Specialty Benefits</li>
+        <li>Life Insurance Company of Alabama</li>
+        <li>Madison National Life Insurance Company </li>
+        <li>Group Dental Services</li>
+      </ul>
+    </div>
+
+  </dialog>
+
+  <!-- 
+  
+End of Client Modal 
+
+-->
+
   <!-- 
   
 Start of Contact Modal 

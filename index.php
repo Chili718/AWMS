@@ -145,7 +145,17 @@ Start of Page Content
 
     <p class="clientSectionDescription">We serve our clients in several different capacities from one time ad hoc projects to long term assignments. Client projects include product development, pricing (i.e. manual rating, credibility rating, and experience rating), policy language, actuarial rate filings, reserve valuation, data analytics, experience reporting & forecasting (i.e. utilization, price, cost, and loss ratio), financial projections, profit forecasting, and business modeling.</p>
 
-    <div class="logoCarousel">Logo Carousel</div>
+    <div class="logoScroller">
+      <div class="logoScrollerInner">
+        <img src="images/c_logo_1.png" alt="">
+        <img src="images/c_logo_2.png" alt="">
+        <img src="images/c_logo_3.png" alt="">
+        <img src="images/c_logo_4.png" alt="">
+        <img src="images/c_logo_5.png" alt="">
+        <img src="images/c_logo_6.png" alt="">
+        <img src="images/c_logo_7.png" alt="">
+      </div>
+    </div>
 
     <h3 class="clientListButton" id="openClientModal">Full Client List</h3>
 
@@ -324,12 +334,14 @@ Start of Contact Modal
 End of Contact Modal 
 
 -->
+  <div class="copyRight">Copyright © 2024 Actuarial Worksite Marketing Services, Inc. - All rights reserved.</div>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script type="text/javascript" src="js/burger.js"></script>
   <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript" src="js/scroller.js"></script>
 
 
 </body>

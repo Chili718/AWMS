@@ -95,7 +95,7 @@
 
 .clientSectionDescription{
 
-    width: clamp(315px, 75vw, 975px);
+    width: clamp(315px, 75vw, 875px);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px 40px 15px 40px;
     font-size: 1.2em;
@@ -105,20 +105,51 @@
 
 .clientListButton{
 
-    background-color: rgba(2, 11, 68, 1);
+    background-color: rgba(2, 11, 68, 0.7);
     cursor: pointer;
-    padding: 16px 20px;
-    border-radius: 10px;
+    padding: 12px 35px;
+    font-size: 1.2em;
     color: white;
+    clip-path: polygon(10% 0, 90% 0, 95% 10%, 95% 90%, 90% 100%, 10% 100%, 5% 90%, 5% 10%);
+    transition: 0.3s ease;
 
 }
 
-.logoCarousel{
+.logoScroller{
 
-    padding: 8px;
-    width: 80vw;
-    height: 10px;
-    background-color: white;
+    max-width: 850px;
+    /* border: 3px solid lime; */
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+
+}
+
+.logoScrollerInner{
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-block: 1rem;
+    animation: scroll 40s linear infinite;
+    width: max-content;
+
+}
+
+.logoScrollerInner img{
+
+    width: 150px;
+    filter: drop-shadow(20px 14px 5px rgba(0, 0, 0, 0.1));
+
+}
+
+@keyframes scroll{
+
+    to{
+
+        transform: translate(calc(-50% - 0.75rem));
+
+    }
 
 }
 
@@ -183,6 +214,15 @@
 
         transform: scale(1.1);
 
+    }
+
+    .clientListButton:hover{
+
+        background-color: rgba(255, 255, 255, 0.6);
+        color: rgba(2, 11, 68, 1);
+        border: 2px solid rgba(2, 11, 68, 1);
+        clip-path: polygon(0 0, 100% 0, 100% 10%, 100% 90%, 100% 100%, 0 100%, 0 90%, 0 12%);
+        border-radius: 30px;
     }
 
 }

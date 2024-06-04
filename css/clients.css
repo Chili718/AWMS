@@ -33,6 +33,14 @@
     background: rgba(0, 0, 0, 0.4);
 }
 
+.innerClientModal{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 .closeClientModal {
 
     position: absolute;

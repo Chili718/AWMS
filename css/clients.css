@@ -101,9 +101,10 @@
 
     padding: 8px 50px 8px 50px;
     color: white;
-    font-size: 1.7em;
+    font-size: 1.6em;
     background-color: rgba(175, 16, 44, 0.8);
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    margin-top: 3%;
 
 }
 
@@ -112,7 +113,7 @@
     width: clamp(250px, 75vw, 875px);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px 40px 15px 40px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     clip-path: polygon(100% 0, 98% 50%, 100% 100%, 0% 100%, 2% 50%, 0% 0%);
 
 }
@@ -205,7 +206,7 @@
 
     .clientSectionTitle{
 
-        font-size: 1.6em;
+        font-size: 1.5em;
 
     }
 

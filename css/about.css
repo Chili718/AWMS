@@ -15,7 +15,7 @@
     background-color: rgba(175, 16, 44, 0.8);
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     color: white;
-    font-size: 1.7em;
+    font-size: 1.6em;
     margin-top: 30px;
 }
 
@@ -70,7 +70,7 @@
             polygon(100% 0, 0 0, 0 calc(100% - var(--f)), var(--f) 100%,
             var(--f) calc(100% - var(--f)), 100% calc(100% - var(--f)),
             calc(100% - var(--r)) calc(50% - var(--f)/2));
-    font-size: 1.8em;
+    font-size: 1.5em;
     height: 40px;
     padding-top: 5px;
 
@@ -140,7 +140,7 @@
 
     .titleRibbon{
 
-        font-size: 1.6em;
+        font-size: 1.4em;
         padding-inline: 20px;
         --f: 10px;
         height: 35px;

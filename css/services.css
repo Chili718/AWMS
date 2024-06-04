@@ -13,7 +13,7 @@
     background-color: rgba(175, 16, 44, 0.8);
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     color: white;
-    font-size: 1.7em;
+    font-size: 1.6em;
     margin-top: 30px;
 }
 
@@ -57,7 +57,7 @@
     padding: 8px 25px 8px 40px;
     background-color: rgba(175, 16, 44, 0.8);
     color: white;
-    font-size: 1.5em;
+    font-size: 1.4em;
     border: 2px solid white;
     margin: 0;
     
@@ -71,7 +71,7 @@
     margin: 0;
     line-height: 3px;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1em;
     color: black;
     line-height: 24px;
     padding: 15px;

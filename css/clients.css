@@ -1,4 +1,13 @@
-/* Includes CSS for client modal and client section on home page */
+/* Includes CSS for client modal and client page*/
+
+.clientPageContainer {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
 
 .clientModal {
 
@@ -8,9 +17,6 @@
     overflow: visible;
     background-color: rgba(255, 255, 255, 1);
     outline: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     overflow-y: scroll;
     -ms-overflow-style: none;
     /* IE and Edge */
@@ -95,7 +101,7 @@
 
 .clientSectionDescription{
 
-    width: clamp(315px, 75vw, 875px);
+    width: clamp(250px, 75vw, 875px);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px 40px 15px 40px;
     font-size: 1.2em;
@@ -133,6 +139,7 @@
     padding-block: 1rem;
     animation: scroll 40s linear infinite;
     width: max-content;
+    height: fit-content;
 
 }
 
@@ -176,6 +183,24 @@
 
     }
 
+    .clientSectionDescription{
+
+        font-size: 1.1em;
+
+    }
+
+    .clientListButton{
+
+        font-size: 1.1em;
+
+    }
+
+    .clientSectionTitle{
+
+        font-size: 1.6em;
+
+    }
+
 }
 
 @media screen and (max-width: 475px) {
@@ -204,6 +229,17 @@
         font-size: 1.5em;
         margin-bottom: 0;
         margin-top: 30px;
+
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+
+    .clientSectionDescription{
+
+        padding: 15px 25px 15px 25px;
+        font-size: 1em;
 
     }
 

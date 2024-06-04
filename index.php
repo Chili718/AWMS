@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/clients.css">
+  <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/contactModal.css">
 
@@ -141,23 +142,9 @@ Start of Page Content
 -->
   <div class="pageContentContainer" id="pageContentContainer">
 
-    <h2 class="clientSectionTitle">Our Clients</h2>
+    
 
-    <p class="clientSectionDescription">We serve our clients in several different capacities from one time ad hoc projects to long term assignments. Client projects include product development, pricing (i.e. manual rating, credibility rating, and experience rating), policy language, actuarial rate filings, reserve valuation, data analytics, experience reporting & forecasting (i.e. utilization, price, cost, and loss ratio), financial projections, profit forecasting, and business modeling.</p>
-
-    <div class="logoScroller">
-      <div class="logoScrollerInner">
-        <img src="images/c_logo_1.png" alt="">
-        <img src="images/c_logo_2.png" alt="">
-        <img src="images/c_logo_3.png" alt="">
-        <img src="images/c_logo_4.png" alt="">
-        <img src="images/c_logo_5.png" alt="">
-        <img src="images/c_logo_6.png" alt="">
-        <img src="images/c_logo_7.png" alt="">
-      </div>
-    </div>
-
-    <h3 class="clientListButton" id="openClientModal">Full Client List</h3>
+    <h3 class="disclaimer">AWMS and it's associates are proud members of the American Academy of Actuaries, Society of Actuaries, National Association of Dental Plans, and Southeastern Actuaries Club. </h3>
 
   </div>
   <!-- 
@@ -183,122 +170,22 @@ End of Background
 
   <!-- 
   
-Start of Client Modal 
-
--->
-
-  <dialog class="clientModal" id="clientModal">
-    <div class="closeClientModal" id="closeClientModal"><ion-icon name="close-circle-outline"></ion-icon></div>
-    <h2 class="clientModalTitle">Client List</h2>
-    <div class="clientListHolder">
-      <ul class="clientList">
-        <li>Guardian Life Insurance Company</li>
-        <li>United Concordia</li>
-        <li>Companion Life Insurance Company</li>
-        <li>P&R Dental Strategies</li>
-        <li>Dental Network of America</li>
-        <li>WellPoint Dental Services</li>
-        <li>Continental Life Insurance Company</li>
-        <li>DentaQuest</li>
-        <li>Delta Dental of Michigan </li>
-        <li>Delta Dental of Arkansas</li>
-        <li>Delta Dental of Idaho</li>
-        <li>Delta Dental of Massachusetts</li>
-        <li>Delta Dental of Kansas</li>
-        <li>Delta Dental of Oklahoma</li>
-        <li>SafeGuard Health Enterprises</li>
-        <li>Assurant (Fortis Life and Fortis Benefits)</li>
-        <li>Dearborn Life Insurance Company</li>
-        <li>Renaissance Life and Health Insurance Company</li>
-        <li>Davis Vision</li>
-        <li>Superior Vision</li>
-        <li>PerioProtect</li>
-        <li>Merchant Benefit Administration</li>
-        <li>Argus Dental</li>
-        <li>Employers Select Benefits</li>
-        <li>Transamerica Assurance Company</li>
-        <li>Health Resources, Inc.</li>
-        <li>Premera Blue Cross of Washington</li>
-        <li>Gerber Life Insurance Company</li>
-        <li>Premier Access Dental Plans</li>
-        <li>DentistDirect Dental Plans</li>
-        <li>Bright Benefits</li>
-        <li>PrimeCare Benefits Group</li>
-        <li>Risk Solutions Resources, Inc.</li>
-        <li>Global Preferred Solutions, Inc.</li>
-        <li>Time Insurance Company</li>
-        <li>Conseco Insurance Companies</li>
-        <li>Starmount Life Insurance Company</li>
-        <li>Federal Life Insurance Company</li>
-        <li>American Public Life Insurance Company</li>
-      </ul>
-      <ul class="clientList">
-        <li>Aflac (American Family Life)</li>
-        <li>Dental Care Plus</li>
-        <li>Beam Dental</li>
-        <li>National Guardian Life Insurance Company</li>
-        <li>Nationwide Life Insurance Company</li>
-        <li>Kansas City Life Insurance Company</li>
-        <li>CareFirst BlueCross BlueShield of Maryland</li>
-        <li>American International Group (AIG)</li>
-        <li>American Fidelity Assurance Company</li>
-        <li>Careington International Corporation</li>
-        <li>Louisiana Sate University</li>
-        <li>Fidelity Security Life Insurance Company</li>
-        <li>Avesis</li>
-        <li>Citizens Security Life Insurance Company</li>
-        <li>Mutual of Omaha Life insurance Company</li>
-        <li>Key Life Insurance Company</li>
-        <li>Southland National Insurance Corporation</li>
-        <li>SurePoint Reinsurance Advisors, LLC</li>
-        <li>Niagara Life Insurance Company</li>
-        <li>Blue Cross Blue Shield of South Carolina</li>
-        <li>Blue Cross Blue Shield of Minnesota</li>
-        <li>Corvesta, Inc.</li>
-        <li>Blue Cross Blue Shield of Tennessee</li>
-        <li>Liberty Dental Plans</li>
-        <li>SeeChange Life Insurance Company</li>
-        <li>John Alden Life Insurance Company</li>
-        <li>Lewer Life Insurance Company</li>
-        <li>Cypress Dental Administrators</li>
-        <li>Commercial Travelers Life Insurance Company</li>
-        <li>Healthy Choices Benefits</li>
-        <li>Nevada Dental Benefits</li>
-        <li>LifeMap Assurance Company</li>
-        <li>Excel Vision</li>
-        <li>Group Vision Services</li>
-        <li>Level Benefits</li>
-        <li>Humana Specialty Benefits</li>
-        <li>Life Insurance Company of Alabama</li>
-        <li>Madison National Life Insurance Company </li>
-        <li>Group Dental Services</li>
-      </ul>
-    </div>
-
-  </dialog>
-
-  <!-- 
-  
-End of Client Modal 
-
--->
-
-  <!-- 
-  
 Start of Contact Modal 
 
 -->
   <dialog class="contactModal" id="contactModal">
     <img src="images/awms_logo_red_icon.png" alt="X" class="informationBlockImg">
-    <div class="informationBlock">
-      <!-- <p>Mobile: (317) 514-5027</p>
-      <p>Email: jeff@awms.net</p>
-      <p>Address: 5099 E Paynetown Road, Bloomington, IN 47401</p> -->
-    </div>
-
+    
     <div class="closeContactModal" id="closeContactModal"><ion-icon name="close-circle-outline"></ion-icon></div>
 
     <form class="frm" id="frm" method="dialog">
+      <div class="infoBlock">
+
+        <p><b>Mobile:</b> (317) 514-5027</p>
+        <p><b>Email:</b> jeff@awms.net</p>
+        <p><b>Address:</b> 5099 E Paynetown Road, Bloomington, IN 47401</p>
+
+      </div>
 
       <h1>Contact Us</h1>
 
@@ -340,9 +227,7 @@ End of Contact Modal
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script type="text/javascript" src="js/burger.js"></script>
-  <script type="text/javascript" src="js/modal.js"></script>
-  <script type="text/javascript" src="js/scroller.js"></script>
-
+  <script type="text/javascript" src="js/contactModal.js"></script>
 
 </body>
 

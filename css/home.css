@@ -1,0 +1,25 @@
+.disclaimer{
+
+    clip-path: polygon(3% 0, 97% 0, 100% 50%, 97% 100%, 3% 100%, 0% 50%);
+    background-color: rgba(175, 16, 44, 0.8);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 10px 25px 10px 25px;
+    text-align: center;
+    width: clamp(310px, 90vw, 1050px);
+
+}
+
+@media screen and (max-width: 650px){
+
+    .disclaimer{
+
+        font-size: 0.8em;
+        padding: 10px 15px 10px 15px;
+        width: clamp(275px, 85vw, 1050px);
+        margin-bottom: 30px;
+
+    }
+
+}

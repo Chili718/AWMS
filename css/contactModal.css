@@ -71,7 +71,7 @@
     box-shadow: 0.1rem 0.1rem 0.3rem var(--white-shade-two), -0.08rem -0.08rem 0.25rem var(--white);
     max-width: 350px;
     min-width: 215px;
-    margin-top: 4%;
+    /* margin-top: 4%; */
 
 }
 
@@ -126,6 +126,25 @@ select:-webkit-autofill:focus {
     font-size: 1.8rem;
     color: rgba(2, 11, 68, 1);
     text-align: center;
+
+}
+
+.infoBlock{
+
+    width: clamp(225px, 25vw, 300px);
+    margin-right: 35px;
+
+}
+
+.infoBlock p{
+
+    margin: 0;
+
+}
+
+.infoBlock p:nth-of-type(2){
+
+    margin: 3px 0px 3px 0px;
 
 }
 
@@ -204,7 +223,22 @@ select:-webkit-autofill:focus {
 
 }
 
+@media screen and (max-width: 1000px){
 
+    .contactButton{
+
+        font-size: 2em;
+        padding: 6px 60px 6px 60px;
+
+    }
+
+    .contactButtonContainer{
+
+        bottom: -10px;
+
+    }
+
+}
 
 @media screen and (max-width: 768px) {
 

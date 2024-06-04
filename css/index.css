@@ -169,8 +169,7 @@ body{
   /* transition: transform 5s ease-in-out; */
   left: 100%;
   transform: translateX(-100%);
-  animation: cloudLoop  alternate 240s linear infinite;
-
+  animation: cloudLoop  alternate 200s linear infinite;
 }
 
 .towers{
@@ -198,12 +197,12 @@ body{
 
 .copyRight{
 
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 5px 10px;
   position: fixed;
   bottom: 0;
   left: 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: bold;
   z-index: 2;
 
@@ -270,6 +269,12 @@ body{
 
   }
 
+  .copyRight{
+
+    font-size: 0.7em;
+
+  }
+
 }
 
 @media screen and (max-width: 584px) {
@@ -284,6 +289,12 @@ body{
   .logo{
 
     width: 75vw;
+
+  }
+
+  .copyRight{
+
+    font-size: 0.6em;
 
   }
 

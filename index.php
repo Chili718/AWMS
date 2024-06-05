@@ -35,6 +35,9 @@
       contentHeight = window.innerHeight - $('.navContainer').height();
       $(".pageContentContainer").height(contentHeight);
 
+      //console.log(window.innerHeight - $('.homePageContainer').height());
+      $(".homePageContainer").css('margin-top', (window.innerHeight - $('.navContainer').height()) / 2 - $('.homePageContainer').height());
+
       $(window).resize(function() {
         contentHeight = window.innerHeight - $('.navContainer').height();
         $(".pageContentContainer").height(contentHeight);
@@ -62,7 +65,7 @@
         },
       });
 
-      $('.navButtonContainer, .logo').click(function(e) {
+      $('.navButtonContainer, .navImg').click(function(e) {
         var url = $(this).attr('id') + ".html";
         //console.log(url);
         if (url != "contact.html") {
@@ -97,7 +100,7 @@ Start of Navigation Bar and Burger Menu
 
 -->
   <div class="navContainer">
-    <img class="logo" id="home" src="images/AWMS-Logo.png" alt="">
+    <img class="navImg" id="home" src="images/awms_logo_red_icon.png" alt="">
 
     <div class="burger">
       <span></span>
@@ -144,29 +147,21 @@ Start of Page Content
 
     <div class="homePageContainer">
 
-      <div class="introSection">
+      <img class="logo" src="images/AWMS-Logo.png" alt="">
 
-        <div class="homeAnim">
+      <div class="homeAnim">
 
-          <h4>Reliable</h4>
-          <h4>Efficient</h4>
-          <h4>Innovative</h4>
-          <h4>Responsive</h4>
-
-          <img src="images/awms_home_new.png" alt="">
-
-        </div>
-
-        <div class="introText">
-
-          <p class="innerIntroText">AWMS is a premier actuarial consulting firm providing expertise in the areas of product development, pricing, and the financial management of insured worksite products. Our goals are to develop, price and provide our clients with new marketable product solutions while profitably managing existing books of business.</p>
-
-        </div>
+        <h4>Reliable</h4>
+        <h4>Efficient</h4>
+        <h4>Innovative</h4>
+        <h4>Responsive</h4>
 
       </div>
 
-      <h3 class="disclaimer">AWMS and it's associates are proud members of the American Academy of Actuaries, Society of Actuaries, National Association of Dental Plans, and Southeastern Actuaries Club. </h3>
 
+<!-- 
+      <h3 class="disclaimer">AWMS and it's associates are proud members of the American Academy of Actuaries, Society of Actuaries, National Association of Dental Plans, and Southeastern Actuaries Club. </h3>
+ -->
     </div>
 
   </div>

@@ -85,6 +85,7 @@
     width: fit-content;
     font-size: 1.1em;
     width: clamp(220px, 70vw, 465px);
+    line-height: 22px;
 
 
 }

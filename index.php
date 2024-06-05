@@ -142,9 +142,32 @@ Start of Page Content
 -->
   <div class="pageContentContainer" id="pageContentContainer">
 
-    
+    <div class="homePageContainer">
 
-    <h3 class="disclaimer">AWMS and it's associates are proud members of the American Academy of Actuaries, Society of Actuaries, National Association of Dental Plans, and Southeastern Actuaries Club. </h3>
+      <div class="introSection">
+
+        <div class="homeAnim">
+
+          <h4>Reliable</h4>
+          <h4>Efficient</h4>
+          <h4>Innovative</h4>
+          <h4>Responsive</h4>
+
+          <img src="images/awms_home_new.png" alt="">
+
+        </div>
+
+        <div class="introText">
+
+          <p class="innerIntroText">AWMS is a premier actuarial consulting firm providing expertise in the areas of product development, pricing, and the financial management of insured worksite products. Our goals are to develop, price and provide our clients with new marketable product solutions while profitably managing existing books of business.</p>
+
+        </div>
+
+      </div>
+
+      <h3 class="disclaimer">AWMS and it's associates are proud members of the American Academy of Actuaries, Society of Actuaries, National Association of Dental Plans, and Southeastern Actuaries Club. </h3>
+
+    </div>
 
   </div>
   <!-- 
@@ -175,7 +198,7 @@ Start of Contact Modal
 -->
   <dialog class="contactModal" id="contactModal">
     <img src="images/awms_logo_red_icon.png" alt="X" class="informationBlockImg">
-    
+
     <div class="closeContactModal" id="closeContactModal"><ion-icon name="close-circle-outline"></ion-icon></div>
 
     <form class="frm" id="frm" method="dialog">

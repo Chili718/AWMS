@@ -49,7 +49,7 @@ function toggle(){
 
 //stop animations from playing when the window is being resized
 //removes the jank look
-var resizeTimer;
+/* var resizeTimer;
 window.addEventListener("resize", e => {
 
     document.body.classList.add("resize-animation-stopper");
@@ -59,4 +59,4 @@ window.addEventListener("resize", e => {
         document.body.classList.remove("resize-animation-stopper");
     }, 400);
 
-});
+}); */

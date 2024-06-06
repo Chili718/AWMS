@@ -3,10 +3,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* margin-top: 25%; */
-    animation: 1s linear 3.75s forwards fadeToOrgin;
+    margin-top: 10px;
+    /* animation: 1s linear 3.75s forwards fadeToOrgin; */
 }
-
+/* 
 @keyframes fadeToOrgin {
 
     to {
@@ -15,7 +15,7 @@
 
     }
 
-}
+} */
 
 .introSection{
 
@@ -43,7 +43,7 @@
     /* padding: 10px 45px 10px 75px; */
     color: white;
     opacity: 0;
-    animation: 0.5s linear 4.75s forwards fadeInText;
+/*     animation: 0.5s linear 4.75s forwards fadeInText; */
     /* display: none; */
     font-size: 1.4em;
     text-align: left;
@@ -56,7 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: clamp(300px, 80vw, 875px);
+    width: clamp(300px, 75vw, 875px);
     margin-top: 20px;
 
 }
@@ -64,17 +64,24 @@
 .homeAnim h4{
 
     color: #020b44;
-    font-size: 2.1em;
+    font-size: 1.7em;
     margin: 0;
-    filter: drop-shadow(20px 14px 5px rgba(0, 0, 0, 0.1));
     font-weight: lighter;
     letter-spacing: 1px;
-    opacity: 0;
-    animation: 0.75s linear forwards fadeInWords;
+    /* animation: 0.75s linear forwards fadeInWords; */
     filter: drop-shadow(20px 14px 3px rgba(0, 0, 0, 0.1));
 }
 
-.homeAnim h4:nth-of-type(1) {
+.homeAnim span{
+
+    width: 25px;
+    height: 2px;
+    background-color: rgba(175, 16, 44, 0.8);
+    /* border-radius: 50%; */
+
+}
+
+/* .homeAnim h4:nth-of-type(1) {
 
     animation-delay: 0.75s;
 
@@ -95,9 +102,9 @@
 .homeAnim h4:nth-of-type(4){
 
     animation-delay: 3s;
-}
+} */
 
-@keyframes fadeInWords{
+/* @keyframes fadeInWords{
 
     from {
 
@@ -113,7 +120,8 @@
 
     }
 
-}
+} */
+
 /* 
 @keyframes grow {
     
@@ -157,6 +165,42 @@
 
 }
 
+@media screen and (max-width: 1200px) {
+
+    .homeAnim h4 {
+
+        font-size: 1.5em;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .homeAnim h4 {
+
+        font-size: 1.3em;
+
+    }
+
+}
+
+@media screen and (max-width: 825px){
+
+    .homeAnim span{
+
+        width: 15px;
+
+    }
+
+    .homeAnim h4 {
+
+        font-size: 1.1em;
+
+    }
+
+}
+
 @media screen and (max-width: 650px){
 
     .disclaimer{
@@ -167,5 +211,39 @@
         margin-bottom: 30px;
 
     }
+
+    .homeAnim{
+
+        width: clamp(300px, 95vw, 500px);
+
+    }
+
+    .homeAnim span {
+
+        width: 10px;
+
+    }
+
+    .homeAnim h4 {
+
+        font-size: 1em;
+
+    }
+
+}
+
+@media screen and (max-width: 425px){
+
+    .homeAnim span {
+    
+            width: 6px;
+    
+        }
+    
+        .homeAnim h4 {
+    
+            font-size: 0.8em;
+    
+        }
 
 }

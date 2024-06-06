@@ -36,7 +36,7 @@
       $(".pageContentContainer").height(contentHeight);
 
       //console.log(window.innerHeight - $('.homePageContainer').height());
-      $(".homePageContainer").css('margin-top', (window.innerHeight - $('.navContainer').height()) / 2 - $('.homePageContainer').height());
+      //$(".homePageContainer").css('margin-top', (window.innerHeight - $('.navContainer').height()) / 2 - $('.homePageContainer').height());
 
       $(window).resize(function() {
         contentHeight = window.innerHeight - $('.navContainer').height();
@@ -151,15 +151,20 @@ Start of Page Content
 
       <div class="homeAnim">
 
+        <span></span>
         <h4>Reliable</h4>
+        <span></span>
         <h4>Efficient</h4>
+        <span></span>
         <h4>Innovative</h4>
+        <span></span>
         <h4>Responsive</h4>
+        <span></span>
 
       </div>
 
 
-<!-- 
+      <!-- 
       <h3 class="disclaimer">AWMS and it's associates are proud members of the American Academy of Actuaries, Society of Actuaries, National Association of Dental Plans, and Southeastern Actuaries Club. </h3>
  -->
     </div>
@@ -246,6 +251,7 @@ End of Contact Modal
 
   <script type="text/javascript" src="js/burger.js"></script>
   <script type="text/javascript" src="js/contactModal.js"></script>
+  <script type="text/javascript" src="js/animationHandler.js"></script>
 
 </body>
 

@@ -27,7 +27,7 @@ body{
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  margin-top: 6px;
+  margin-top: 0px;
 
 }
 
@@ -38,7 +38,8 @@ body{
   cursor: pointer;
   filter: drop-shadow(20px 14px 5px rgba(0, 0, 0, 0.1));
   margin-left: clamp(15px, 5%, 100px);
-  padding: 10px 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   transition: 0.5s ease;
  /*  animation: 0.9s ease var(--navAnimationTime) forwards fadeInNav;
   opacity: 0; */
@@ -391,7 +392,7 @@ body{
 
     .navImg:hover{
 
-      transform: scale(1.2);
+      transform: scale(1.1);
 
     }
 }

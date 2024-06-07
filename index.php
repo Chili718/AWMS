@@ -163,10 +163,31 @@ Start of Page Content
 
       </div>
 
+      <div class="homeContainer one">
 
-      <!-- 
+        <img src="images/home2.png" alt="X">
+        <p>We are a premier actuarial consulting firm providing expertise in the areas of product development, pricing, and the financial management of insured worksite products. </p>
+
+      </div>
+
+      <div class="homeContainer two">
+
+        <p>Our goals are to develop, price and provide our clients with new marketable product solutions while profitably managing existing books of business.</p>
+        <img src="images/home1.png" alt="X">
+
+      </div>
+
+      <!-- <div class="homeContainer three">
+
+        <p>AWMS utilizes proprietary software programs to analyze and manage insurance products. These programs uniquely assist our clients to effectively manage emerging experience, competitively price their products, maximize profitability, and accurately forecast future results.</p>
+        <img src="images/home3.png" alt="X">
+
+      </div> -->
+
+
+      
       <h3 class="disclaimer">AWMS and it's associates are proud members of the American Academy of Actuaries, Society of Actuaries, National Association of Dental Plans, and Southeastern Actuaries Club. </h3>
- -->
+
     </div>
 
   </div>

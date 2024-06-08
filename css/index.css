@@ -350,6 +350,13 @@ body{
 
 @media screen and (max-width: 584px) {
 
+  .pageContentContainer{
+
+    -webkit-mask: linear-gradient(180deg, transparent, white 25px);
+      mask: linear-gradient(180deg, transparent, white 25px);
+
+  }
+
 
   .logo{
 

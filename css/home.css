@@ -189,7 +189,7 @@
 
     padding: 15px 40px 15px 34px;
     clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
-    height: 63px;
+    /* height: 63px; */
     grid-column: 2/6;
     grid-row: 1/2;
     align-self: center;
@@ -218,7 +218,7 @@
 
     padding: 15px 36px 15px 50px;
     clip-path: polygon(5% 0, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
-    height: 63px;
+    /* height: 63px; */
     grid-column: 1/5;
         grid-row: 1/2;
         align-self: center;
@@ -235,24 +235,10 @@
 
 }
 
-.three{
-
-    margin-top: 12vh;
-
-}
-
 .three p{
 
-    width: 400px;
-    padding: 25px;
-    clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
-
-}
-
-.three img{
-
-    bottom: -75%;
-    right: -25%;
+    width: 500px;
+    padding-left: 85px;
 
 }
 
@@ -266,6 +252,8 @@
     padding: 10px 25px 10px 25px;
     text-align: center;
     width: clamp(310px, 90vw, 900px);
+    margin-bottom: 60px;
+    margin-top: 35px;
 
 }
 
@@ -296,6 +284,12 @@
     .one{
 
         margin-right: 25vw;
+
+    }
+
+    .three p{
+
+        width: 438px;
 
     }
 
@@ -334,6 +328,19 @@
 
     }
 
+    .four p{
+
+        width: 425px;
+        padding-right: 70px;
+
+    }
+
+    .four{
+
+        margin-left: 1vw;
+
+    }
+
 }
 
 @media screen and (max-width: 705px){
@@ -353,6 +360,13 @@
     .homeContainer {
 
         width: clamp(310px, 95vw, 575px);
+
+    }
+
+    .three p {
+
+        width: 390px;
+        padding-right: 22px;
 
     }
 
@@ -387,9 +401,22 @@
 
     }
 
+    .four p{
+     
+        width: 370px;
+
+    }
+
+
 }
 
-@media screen and (max-width: 525px){
+@media screen and (max-width: 580px){
+
+    .four p, .three p{
+
+        width: auto;
+
+    }
 
     .homeContainer {
     
@@ -402,7 +429,7 @@
 
         justify-self: center;
         grid-column: 1/6;
-        width: 150px;
+        width: 175px;
 
     }
 

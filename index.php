@@ -12,13 +12,13 @@
   <link rel="icon" href="images/awms_logo_red_icon.png">
 
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/productPage.css">
+  <!--   <link rel="stylesheet" href="css/productPage.css">
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/clients.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/burger.css">
-  <link rel="stylesheet" href="css/contactModal.css">
+  <link rel="stylesheet" href="css/contactModal.css"> -->
 
 
   <!-- jQuery -->
@@ -31,27 +31,21 @@
 
   <script>
     $(document).ready(function() {
-
+      //set page content height to the remainder of the screen height after navigation
       contentHeight = window.innerHeight - $('.navContainer').height();
       $(".pageContentContainer").height(contentHeight);
 
-      //console.log(window.innerHeight - $('.homePageContainer').height());
-      //$(".homePageContainer").css('margin-top', (window.innerHeight - $('.navContainer').height()) / 2 - $('.homePageContainer').height());
-
       $(window).resize(function() {
+        //set page content height to the remainder of the screen height after navigation
         contentHeight = window.innerHeight - $('.navContainer').height();
         $(".pageContentContainer").height(contentHeight);
 
-        /* if ($(window).width() < 921) {
-          $(".nav-links").height(window.innerHeight + 25);
-        } else {
-          $('.nav-links').css('height', '');
-          if ($('.nav-links').hasClass('open'))
-            toggleMenu();
-        } */
-
       });
 
+      $("#contactSend").on("click", function() {
+        $("#frm").trigger("submit");
+      });
+      //initial request to get the home page
       $.ajax({
         type: "GET",
         url: "home.html",
@@ -64,7 +58,7 @@
           console.log("Error!");
         },
       });
-
+      //navigation functionality to get the content of the desired page based on nav button selected
       $('.navButtonContainer, .navImg').click(function(e) {
         var url = $(this).attr('id') + ".html";
         //console.log(url);
@@ -145,7 +139,7 @@ Start of Page Content
 -->
   <div class="pageContentContainer" id="pageContentContainer">
 
-    
+
 
   </div>
   <!-- 
@@ -179,7 +173,7 @@ Start of Contact Modal
 
     <div class="closeContactModal" id="closeContactModal"><ion-icon name="close-circle-outline"></ion-icon></div>
 
-    <form class="frm" id="frm" method="dialog">
+    <form class="frm" id="frm" method="dialog" onsubmit="return submitMail(this)">
       <div class="infoBlock">
 
         <p><b>Mobile:</b> (317) 514-5027</p>
@@ -195,10 +189,10 @@ Start of Contact Modal
           <input type="text" name="name" id="name" required />
           <label>Name</label>
         </div>
-        <div class="inp">
-          <input type="password" name="email" id="email" required />
+        <!-- <div class="inp">
+          <input type="text" name="email" id="email" required />
           <label>Email</label>
-        </div>
+        </div> -->
         <div class="inp">
           <input type="text" name="subject" id="subject" required />
           <label>Subject</label>
@@ -229,7 +223,6 @@ End of Contact Modal
 
   <script type="text/javascript" src="js/burger.js"></script>
   <script type="text/javascript" src="js/contactModal.js"></script>
-  <script type="text/javascript" src="js/animationHandler.js"></script>
 
 </body>
 

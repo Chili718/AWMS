@@ -1,9 +1,10 @@
+/* JS file for the products page carousel and button functionality */
 const products = document.querySelectorAll(".productImg");
 const benefit = document.querySelectorAll('#benefit ul');
 const keyFeatures = document.querySelectorAll('#features ul');
 const rating = document.querySelectorAll('#rating ul');
 var previousProduct;
-
+//swiper js initalization for the carousel
 var mySwiper = new Swiper('.swiper-container', {
 
     effect: "coverflow",
@@ -40,11 +41,11 @@ var mySwiper = new Swiper('.swiper-container', {
     } */
 
 });
-
+/* Clickable button for the carousel that will display the products information */
 products.forEach(product => {
 
     product.addEventListener("click", () =>{
-
+        //set the first instance of previous product and toggle active styling on clicked button
         if (previousProduct != null) {
 
             previousProduct.classList.toggle('activeProduct');
@@ -55,7 +56,7 @@ products.forEach(product => {
         previousProduct = product;
         product.classList.toggle('activeProduct');
         product.nextElementSibling.classList.toggle('activeProductText');
-
+        //remove the animtion so it may play again when a new selection is clicked
         benefit[0].style.animation = `none`;
         keyFeatures[0].style.animation = `none`;
         rating[0].style.animation = `none`;
@@ -205,7 +206,7 @@ products.forEach(product => {
                 break;
             default:
 
-        }
+        }//fade in the items 
         setTimeout(function () {
             benefit[0].style.animation = `detailsFadeIn 0.5s ease-in-out forwards 0.2s`;
             keyFeatures[0].style.animation = `detailsFadeIn 0.5s ease-in-out forwards 0.3s`;

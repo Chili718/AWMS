@@ -1,3 +1,4 @@
+/* Functionality for the client modal on clients page */
 const clientModal = document.getElementById('clientModal');
 const openClientModal = document.getElementById('openClientModal');
 const closeClientModal = document.getElementById('closeClientModal');
@@ -15,7 +16,7 @@ closeClientModal.addEventListener('click', () => {
     clientModal.close();
 
 });
-
+//functionality for closing the modal on interation of the darkened area
 clientModal.addEventListener("click", e => {
     const dialogDimensions = clientModal.getBoundingClientRect();
     if (

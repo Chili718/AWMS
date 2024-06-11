@@ -6,16 +6,6 @@
     margin-top: 10px;
     /* animation: 1s linear 3.75s forwards fadeToOrgin; */
 }
-/* 
-@keyframes fadeToOrgin {
-
-    to {
-
-        margin-top: 0px;
-
-    }
-
-} */
 
 .introSection{
 
@@ -80,77 +70,6 @@
     /* border-radius: 50%; */
 
 }
-
-/* .homeAnim h4:nth-of-type(1) {
-
-    animation-delay: 0.75s;
-
-}
-
-.homeAnim h4:nth-of-type(2) {
-
-    animation-delay: 1.5s;
-
-}
-
-.homeAnim h4:nth-of-type(3) {
-
-    animation-delay: 2.25s;
-
-}
-
-.homeAnim h4:nth-of-type(4){
-
-    animation-delay: 3s;
-} */
-
-/* @keyframes fadeInWords{
-
-    from {
-
-        transform: translateY(50px);
-        opacity: 0;
-
-    }
-
-    to {
-
-        transform: translateY(0px);
-        opacity: 1;
-
-    }
-
-} */
-
-/* 
-@keyframes grow {
-    
-    to{
-
-        width: 500px;
-        padding-left: 80px;
-        margin-left: 45px;
-
-    }
-
-} */
-/* 
-@keyframes fadeInText{
-    from{
-
-        transform: translateX(50px);
-        opacity: 0;
-
-    }
-    to{
-
-        transform: translateX(0px);
-        opacity: 1;
-        display: block;
-
-    }
-
-} */
 
 .homeContainer{
 

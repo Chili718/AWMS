@@ -1,8 +1,8 @@
+/* JS file for the functionality of the contact modals form */
 const contactModal = document.getElementById('contactModal');
 const openContactModal = document.getElementById('contact');
 const closeContactModal = document.getElementById('closeContactModal');
 
-/* clientModal.close(); */
 
 openContactModal.addEventListener('click', () => {
  
@@ -15,7 +15,7 @@ closeContactModal.addEventListener('click', () =>{
     contactModal.close();
 
 });
-
+//functionality for closing the modal on interation of the darkened area
 contactModal.addEventListener("click", e => {
     const dialogDimensions = contactModal.getBoundingClientRect();
     if (
@@ -27,3 +27,16 @@ contactModal.addEventListener("click", e => {
         contactModal.close();
     }
 });
+
+//mail function for form
+function submitMail(form){
+
+    window.open("mailto:someEmail@gmail.com?subject=" + form.subject.value + "%20-%20 Name:%20"+ form.name.value + "&body=" + form.message.value + "");
+
+    contactModal.close();
+
+    //alert("Your email has been sent!");
+
+    return false;
+
+}

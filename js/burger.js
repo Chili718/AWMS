@@ -1,7 +1,7 @@
 /*
 
 File for all the basic js functions a page on this website needs for
-the burger menu and pre loader
+the burger menu
 
 */
 const burger = document.querySelector('.burger');
@@ -14,7 +14,7 @@ burger.addEventListener('click', () => {
     toggle();
 
 });
-
+//close menu when nav button is clicked
 navButtonContainer.forEach(navButton => {
 
     navButton.addEventListener('click', () => {
@@ -38,6 +38,7 @@ function toggle(){
     navButtonContainer.forEach((buttonContainer, index) => {
 
         buttonContainer.firstElementChild.classList.toggle("navButtonOpen");
+        //if animtaion is applied then remove it so it may play again upon open
         if (buttonContainer.style.animation) {
             buttonContainer.style.animation = '';
         } else {
@@ -46,17 +47,3 @@ function toggle(){
     });
 
 }
-
-//stop animations from playing when the window is being resized
-//removes the jank look
-/* var resizeTimer;
-window.addEventListener("resize", e => {
-
-    document.body.classList.add("resize-animation-stopper");
-
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-        document.body.classList.remove("resize-animation-stopper");
-    }, 400);
-
-}); */
